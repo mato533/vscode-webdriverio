@@ -76,7 +76,7 @@ jobs:
       - name: 🛫 Build and publish as pre-release
         if: ${{  github.event.inputs.publishMarketplace == 'yes' && startsWith(github.event.inputs.releaseType, 'pre') }}
         run: |
-          pnpm run publish:next
+          pnpm --filter @vscode-wdio/release run push
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
           GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
@@ -86,7 +86,7 @@ jobs:
       - name: 🚀 Build and publish
         if: ${{  github.event.inputs.publishMarketplace == 'yes' && !startsWith(github.event.inputs.releaseType, 'pre') }}
         run: |
-          pnpm run publish
+          pnpm --filter @vscode-wdio/release run push
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
           GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}

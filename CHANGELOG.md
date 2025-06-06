@@ -12,6 +12,19 @@
 
 ---
 
+## v0.2.3-next.0 (2025-06-06)
+
+#### :rocket: New Feature
+
+- All packages
+    - Initial release
+
+#### Pre-release information
+
+##### Visual Studio Marketplace
+
+- v0.2.1749199874
+
 ## v0.2.2-next.0 (2025-06-04)
 
 #### :bug: Bug Fix

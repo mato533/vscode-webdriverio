@@ -79,3 +79,5 @@ This extension contributes the following settings:
 ## Remarks
 
 This extension is **pre-release status**. So, the interface (e.g. configuration parameters) is subject to change.
+
+TEST
